@@ -3,7 +3,9 @@ services:
     name: english-quiz-app
     env: node
     plan: free
-    buildCommand: npm install && npm run build
+    # --include=dev is required: NODE_ENV=production below makes npm skip
+    # devDependencies (vite, typescript, vite-plugin-pwa) otherwise, breaking the build.
+    buildCommand: npm install --include=dev && npm run build
     startCommand: npm run start
     healthCheckPath: /api/health
     envVars:
