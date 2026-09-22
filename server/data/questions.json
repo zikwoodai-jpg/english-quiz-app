@@ -1,0 +1,1752 @@
+[
+  {
+    "id": "voc-1",
+    "category": "vocabulary",
+    "level": "beginner",
+    "prompt": "Business: як англійською \"угода\"?",
+    "options": [
+      "deal",
+      "dear",
+      "deed",
+      "dealer"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Deal\" — угода, домовленість. \"We closed the deal.\""
+  },
+  {
+    "id": "voc-2",
+    "category": "vocabulary",
+    "level": "beginner",
+    "prompt": "Travel: як буде \"посадковий талон\"?",
+    "options": [
+      "boarding pass",
+      "landing card",
+      "flight ticket",
+      "entry pass"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Boarding pass\" — посадковий талон на рейс."
+  },
+  {
+    "id": "voc-3",
+    "category": "vocabulary",
+    "level": "intermediate",
+    "prompt": "Tech: що означає \"to deploy\"?",
+    "options": [
+      "видаляти",
+      "розгортати/запускати",
+      "завантажувати",
+      "тестувати"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Deploy\" — розгортати код/систему у продакшн."
+  },
+  {
+    "id": "voc-4",
+    "category": "vocabulary",
+    "level": "beginner",
+    "prompt": "Food: як буде \"духмяний, ароматний\"?",
+    "options": [
+      "bland",
+      "fragrant",
+      "stale",
+      "raw"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Fragrant\" — ароматний, духмяний запах."
+  },
+  {
+    "id": "voc-5",
+    "category": "vocabulary",
+    "level": "intermediate",
+    "prompt": "Business: що означає \"revenue\"?",
+    "options": [
+      "витрати",
+      "дохід/виручка",
+      "прибуток",
+      "кредит"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Revenue\" — загальна виручка компанії (до вирахування витрат)."
+  },
+  {
+    "id": "voc-6",
+    "category": "vocabulary",
+    "level": "beginner",
+    "prompt": "Travel: як буде \"затримка рейсу\"?",
+    "options": [
+      "flight delay",
+      "flight break",
+      "flight stop",
+      "flight pause"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Delay\" — затримка. \"Our flight delay was 2 hours.\""
+  },
+  {
+    "id": "voc-7",
+    "category": "vocabulary",
+    "level": "advanced",
+    "prompt": "Tech: що означає \"scalable\"?",
+    "options": [
+      "масштабований",
+      "застарілий",
+      "безкоштовний",
+      "вразливий"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Scalable\" — те, що легко масштабувати під навантаження."
+  },
+  {
+    "id": "voc-8",
+    "category": "vocabulary",
+    "level": "beginner",
+    "prompt": "Food: як буде \"сирий\" (про м'ясо)?",
+    "options": [
+      "raw",
+      "ripe",
+      "rotten",
+      "fresh"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Raw\" — сирий, необроблений термічно."
+  },
+  {
+    "id": "voc-9",
+    "category": "vocabulary",
+    "level": "beginner",
+    "prompt": "Business: як буде \"зустріч\"?",
+    "options": [
+      "meeting",
+      "meat",
+      "meaning",
+      "meetup only"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Meeting\" — ділова зустріч, нарада."
+  },
+  {
+    "id": "voc-10",
+    "category": "vocabulary",
+    "level": "beginner",
+    "prompt": "Travel: як буде \"багаж\"?",
+    "options": [
+      "luggage",
+      "lugging",
+      "load",
+      "cargo"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Luggage\" — багаж (валізи, сумки в подорожі)."
+  },
+  {
+    "id": "voc-11",
+    "category": "vocabulary",
+    "level": "intermediate",
+    "prompt": "Tech: що означає \"database\"?",
+    "options": [
+      "робочий стіл",
+      "база даних",
+      "резервна копія",
+      "мережа"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Database\" — база даних, структуроване сховище інформації."
+  },
+  {
+    "id": "voc-12",
+    "category": "vocabulary",
+    "level": "beginner",
+    "prompt": "Food: як буде \"смачний\"?",
+    "options": [
+      "tasty",
+      "tasteless",
+      "testy",
+      "toxic"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Tasty\" — смачний."
+  },
+  {
+    "id": "voc-13",
+    "category": "vocabulary",
+    "level": "advanced",
+    "prompt": "Business: що означає \"merger\"?",
+    "options": [
+      "банкрутство",
+      "злиття компаній",
+      "звільнення",
+      "аудит"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Merger\" — злиття двох компаній в одну."
+  },
+  {
+    "id": "voc-14",
+    "category": "vocabulary",
+    "level": "intermediate",
+    "prompt": "Travel: що означає \"customs\"?",
+    "options": [
+      "звичаї",
+      "митниця",
+      "валюта",
+      "страхування"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Customs\" — митниця в аеропорту/на кордоні."
+  },
+  {
+    "id": "voc-15",
+    "category": "vocabulary",
+    "level": "beginner",
+    "prompt": "Tech: як буде \"пароль\"?",
+    "options": [
+      "password",
+      "passport",
+      "passcode only",
+      "passway"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Password\" — пароль для входу в систему."
+  },
+  {
+    "id": "voc-16",
+    "category": "vocabulary",
+    "level": "advanced",
+    "prompt": "Food: що означає \"nutritious\"?",
+    "options": [
+      "несмачний",
+      "поживний",
+      "солодкий",
+      "перчений"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Nutritious\" — поживний, багатий на корисні речовини."
+  },
+  {
+    "id": "voc-17",
+    "category": "vocabulary",
+    "level": "intermediate",
+    "prompt": "Business: що означає \"invoice\"?",
+    "options": [
+      "рахунок-фактура",
+      "запрошення",
+      "договір",
+      "зарплата"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Invoice\" — рахунок-фактура на оплату товару/послуги."
+  },
+  {
+    "id": "voc-18",
+    "category": "vocabulary",
+    "level": "beginner",
+    "prompt": "Travel: як буде \"бронювання\"?",
+    "options": [
+      "reservation",
+      "reserve only",
+      "reservoir",
+      "preservation"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Reservation\" — бронювання столика, готелю, квитка."
+  },
+  {
+    "id": "voc-19",
+    "category": "vocabulary",
+    "level": "advanced",
+    "prompt": "Tech: що означає \"encryption\"?",
+    "options": [
+      "стиснення файлів",
+      "шифрування",
+      "видалення",
+      "резервне копіювання"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Encryption\" — шифрування даних для захисту."
+  },
+  {
+    "id": "voc-20",
+    "category": "vocabulary",
+    "level": "intermediate",
+    "prompt": "Food: що означає \"ingredient\"?",
+    "options": [
+      "інгредієнт",
+      "посуд",
+      "рецепт",
+      "порція"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Ingredient\" — складова частина страви/рецепта."
+  },
+  {
+    "id": "ff-1",
+    "category": "false_friends",
+    "level": "intermediate",
+    "prompt": "Що насправді означає \"magazine\"?",
+    "options": [
+      "магазин",
+      "журнал",
+      "склад",
+      "ринок"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Magazine\" — журнал (не магазин!). Магазин — \"shop/store\"."
+  },
+  {
+    "id": "ff-2",
+    "category": "false_friends",
+    "level": "intermediate",
+    "prompt": "Що насправді означає \"accurate\"?",
+    "options": [
+      "акуратний",
+      "точний",
+      "ввічливий",
+      "швидкий"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Accurate\" — точний. Акуратний — \"tidy/neat\"."
+  },
+  {
+    "id": "ff-3",
+    "category": "false_friends",
+    "level": "advanced",
+    "prompt": "Що насправді означає \"sympathy\"?",
+    "options": [
+      "симпатія (закоханість)",
+      "співчуття",
+      "радість",
+      "подив"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Sympathy\" — співчуття. Симпатія — \"liking/attraction\"."
+  },
+  {
+    "id": "ff-4",
+    "category": "false_friends",
+    "level": "intermediate",
+    "prompt": "Що насправді означає \"fabric\"?",
+    "options": [
+      "фабрика",
+      "тканина",
+      "фактура",
+      "виробництво"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Fabric\" — тканина. Фабрика — \"factory\"."
+  },
+  {
+    "id": "ff-5",
+    "category": "false_friends",
+    "level": "advanced",
+    "prompt": "Що насправді означає \"complexion\"?",
+    "options": [
+      "комплекс",
+      "колір/стан обличчя",
+      "складність",
+      "комплект"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Complexion\" — колір і стан шкіри обличчя."
+  },
+  {
+    "id": "ff-6",
+    "category": "false_friends",
+    "level": "intermediate",
+    "prompt": "Що насправді означає \"prospect\"?",
+    "options": [
+      "проспект (вулиця)",
+      "перспектива/потенційний клієнт",
+      "проспект (буклет)",
+      "просування"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Prospect\" — перспектива або потенційний клієнт."
+  },
+  {
+    "id": "ff-7",
+    "category": "false_friends",
+    "level": "advanced",
+    "prompt": "Що насправді означає \"intelligent\"?",
+    "options": [
+      "інтелігентний",
+      "розумний",
+      "ввічливий",
+      "освічений"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Intelligent\" — розумний. Інтелігентний — \"cultured/refined\"."
+  },
+  {
+    "id": "ff-8",
+    "category": "false_friends",
+    "level": "beginner",
+    "prompt": "Що насправді означає \"artist\"?",
+    "options": [
+      "артист (актор)",
+      "художник",
+      "музикант тільки",
+      "співак тільки"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Artist\" — переважно художник/митець. Актор — \"actor\"."
+  },
+  {
+    "id": "ff-9",
+    "category": "false_friends",
+    "level": "intermediate",
+    "prompt": "Що насправді означає \"list\"?",
+    "options": [
+      "лист (папір)",
+      "список",
+      "аркуш",
+      "сторінка"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"List\" — список. Лист (папір) — \"sheet\", лист (кореспонденція) — \"letter\"."
+  },
+  {
+    "id": "ff-10",
+    "category": "false_friends",
+    "level": "advanced",
+    "prompt": "Що насправді означає \"solid\"?",
+    "options": [
+      "солідний (поважний)",
+      "твердий/міцний",
+      "великий",
+      "дорогий"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Solid\" — твердий, міцний. Солідний — \"respectable/reputable\"."
+  },
+  {
+    "id": "ff-11",
+    "category": "false_friends",
+    "level": "intermediate",
+    "prompt": "Що насправді означає \"compositor\"?",
+    "options": [
+      "композитор",
+      "верстальник тексту",
+      "диригент",
+      "виконавець"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Compositor\" — верстальник. Композитор — \"composer\"."
+  },
+  {
+    "id": "ff-12",
+    "category": "false_friends",
+    "level": "beginner",
+    "prompt": "Що насправді означає \"data\"?",
+    "options": [
+      "дата (число)",
+      "дані",
+      "документ",
+      "таблиця"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Data\" — дані. Дата (число) — \"date\"."
+  },
+  {
+    "id": "ff-13",
+    "category": "false_friends",
+    "level": "advanced",
+    "prompt": "Що насправді означає \"decade\"?",
+    "options": [
+      "декада (10 днів)",
+      "десятиліття",
+      "десяток",
+      "вік"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Decade\" — десятиліття (10 років), не 10 днів."
+  },
+  {
+    "id": "ff-14",
+    "category": "false_friends",
+    "level": "intermediate",
+    "prompt": "Що насправді означає \"genial\"?",
+    "options": [
+      "геніальний",
+      "привітний/доброзичливий",
+      "дивний",
+      "серйозний"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Genial\" — привітний, доброзичливий. Геніальний — \"brilliant/genius\"."
+  },
+  {
+    "id": "ff-15",
+    "category": "false_friends",
+    "level": "beginner",
+    "prompt": "Що насправді означає \"actual\"?",
+    "options": [
+      "актуальний",
+      "справжній/фактичний",
+      "сучасний",
+      "терміновий"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Actual\" — справжній, фактичний. Актуальний — \"relevant/current\"."
+  },
+  {
+    "id": "ff-16",
+    "category": "false_friends",
+    "level": "advanced",
+    "prompt": "Що насправді означає \"receipt\"?",
+    "options": [
+      "рецепт страви",
+      "чек/квитанція",
+      "рецепт ліків",
+      "квиток"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Receipt\" — чек, квитанція про оплату. Рецепт — \"recipe\" (страва) / \"prescription\" (ліки)."
+  },
+  {
+    "id": "ff-17",
+    "category": "false_friends",
+    "level": "intermediate",
+    "prompt": "Що насправді означає \"principal\"?",
+    "options": [
+      "принциповий",
+      "головний/директор школи",
+      "принциповий адвокат",
+      "засадничий тільки"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Principal\" — головний, або директор школи. Принциповий — \"principled\"."
+  },
+  {
+    "id": "ff-18",
+    "category": "false_friends",
+    "level": "beginner",
+    "prompt": "Що насправді означає \"novel\"?",
+    "options": [
+      "новела (оповідання)",
+      "роман",
+      "новина",
+      "новий журнал"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Novel\" — роман. Новела — \"short story\" / \"novella\"."
+  },
+  {
+    "id": "ff-19",
+    "category": "false_friends",
+    "level": "advanced",
+    "prompt": "Що насправді означає \"fabricate\"?",
+    "options": [
+      "виготовляти на фабриці",
+      "фабрикувати/вигадувати (брехню)",
+      "ремонтувати",
+      "імпортувати"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Fabricate\" — вигадувати, фальсифікувати (факти, історію)."
+  },
+  {
+    "id": "pv-1",
+    "category": "phrasal_verbs",
+    "level": "beginner",
+    "prompt": "Complete: \"I need to _____ early tomorrow.\" (прокинутись)",
+    "options": [
+      "get up",
+      "get over",
+      "get away",
+      "get on"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Get up\" — прокидатись/вставати з ліжка."
+  },
+  {
+    "id": "pv-2",
+    "category": "phrasal_verbs",
+    "level": "intermediate",
+    "prompt": "Complete: \"It took months to _____ the breakup.\" (пережити)",
+    "options": [
+      "get up",
+      "get over",
+      "get away",
+      "get in"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Get over\" — пережити, оговтатись від чогось важкого."
+  },
+  {
+    "id": "pv-3",
+    "category": "phrasal_verbs",
+    "level": "beginner",
+    "prompt": "Complete: \"Let's _____ for the weekend.\" (втекти/вирватись)",
+    "options": [
+      "get away",
+      "get up",
+      "get down",
+      "get back"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Get away\" — втекти на відпочинок, вирватись з рутини."
+  },
+  {
+    "id": "pv-4",
+    "category": "phrasal_verbs",
+    "level": "intermediate",
+    "prompt": "Complete: \"Please _____ the form before Friday.\" (заповнити)",
+    "options": [
+      "fill in",
+      "fill up",
+      "fill out",
+      "fill in / fill out (both correct)"
+    ],
+    "correctIndex": 3,
+    "explanation": "І \"fill in\", і \"fill out\" означають заповнити форму — обидва вживаються."
+  },
+  {
+    "id": "pv-5",
+    "category": "phrasal_verbs",
+    "level": "intermediate",
+    "prompt": "Complete: \"The meeting was _____ to next week.\" (перенесена)",
+    "options": [
+      "put off",
+      "put on",
+      "put up",
+      "put down"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Put off\" — відкласти, перенести на пізніше."
+  },
+  {
+    "id": "pv-6",
+    "category": "phrasal_verbs",
+    "level": "beginner",
+    "prompt": "Complete: \"Turn _____ the music, please.\" (зробити тихіше)",
+    "options": [
+      "down",
+      "off",
+      "up",
+      "over"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Turn down\" — зробити тихіше/зменшити гучність."
+  },
+  {
+    "id": "pv-7",
+    "category": "phrasal_verbs",
+    "level": "advanced",
+    "prompt": "Complete: \"The startup managed to _____ despite the crisis.\" (вижити/протриматись)",
+    "options": [
+      "carry on",
+      "hold on",
+      "stay away",
+      "give up"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Carry on\" — продовжувати, не здаватись попри труднощі."
+  },
+  {
+    "id": "pv-8",
+    "category": "phrasal_verbs",
+    "level": "beginner",
+    "prompt": "Complete: \"Can you _____ the TV? I can't hear.\" (зробити гучніше)",
+    "options": [
+      "turn up",
+      "turn down",
+      "turn off",
+      "turn over"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Turn up\" — зробити гучніше/збільшити."
+  },
+  {
+    "id": "pv-9",
+    "category": "phrasal_verbs",
+    "level": "intermediate",
+    "prompt": "Complete: \"I need to _____ this problem before Monday.\" (розібратись із)",
+    "options": [
+      "look into",
+      "look up",
+      "look after",
+      "look out"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Look into\" — розібратись, дослідити проблему."
+  },
+  {
+    "id": "pv-10",
+    "category": "phrasal_verbs",
+    "level": "beginner",
+    "prompt": "Complete: \"Please _____ your shoes before entering.\" (зняти)",
+    "options": [
+      "take off",
+      "take up",
+      "take out",
+      "take over"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Take off\" — зняти (одяг, взуття) або зліт літака."
+  },
+  {
+    "id": "pv-11",
+    "category": "phrasal_verbs",
+    "level": "advanced",
+    "prompt": "Complete: \"The new CEO wants to _____ the whole department.\" (взяти на себе управління)",
+    "options": [
+      "take over",
+      "take off",
+      "take back",
+      "take down"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Take over\" — перебрати керівництво/контроль."
+  },
+  {
+    "id": "pv-12",
+    "category": "phrasal_verbs",
+    "level": "intermediate",
+    "prompt": "Complete: \"Don't _____ on your dreams.\" (здаватись)",
+    "options": [
+      "give up",
+      "give in",
+      "give away",
+      "give back"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Give up\" — здаватись, кидати справу."
+  },
+  {
+    "id": "pv-13",
+    "category": "phrasal_verbs",
+    "level": "beginner",
+    "prompt": "Complete: \"I'll _____ you at the airport.\" (забрати/зустріти)",
+    "options": [
+      "pick up",
+      "pick out",
+      "pick on",
+      "pick over"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Pick up\" — забрати/зустріти когось транспортом."
+  },
+  {
+    "id": "pv-14",
+    "category": "phrasal_verbs",
+    "level": "advanced",
+    "prompt": "Complete: \"The negotiations finally _____ after months.\" (завершились успішно)",
+    "options": [
+      "paid off",
+      "paid up",
+      "paid back",
+      "paid in"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Pay off\" — окупитись, дати результат."
+  },
+  {
+    "id": "pv-15",
+    "category": "phrasal_verbs",
+    "level": "intermediate",
+    "prompt": "Complete: \"She decided to _____ smoking last year.\" (кинути)",
+    "options": [
+      "give up",
+      "give out",
+      "give away",
+      "give over"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Give up smoking\" — кинути палити."
+  },
+  {
+    "id": "pv-16",
+    "category": "phrasal_verbs",
+    "level": "beginner",
+    "prompt": "Complete: \"Let's _____ before it gets dark.\" (вирушати)",
+    "options": [
+      "set off",
+      "set up",
+      "set back",
+      "set down"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Set off\" — вирушати в дорогу."
+  },
+  {
+    "id": "pv-17",
+    "category": "phrasal_verbs",
+    "level": "advanced",
+    "prompt": "Complete: \"The project was _____ due to lack of funding.\" (скасовано)",
+    "options": [
+      "called off",
+      "called out",
+      "called up",
+      "called back"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Call off\" — скасувати заплановане."
+  },
+  {
+    "id": "pv-18",
+    "category": "phrasal_verbs",
+    "level": "intermediate",
+    "prompt": "Complete: \"I can't _____ what happened yesterday.\" (второпати/зрозуміти)",
+    "options": [
+      "figure out",
+      "figure in",
+      "figure up",
+      "figure down"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Figure out\" — зрозуміти, розібратись."
+  },
+  {
+    "id": "pv-19",
+    "category": "phrasal_verbs",
+    "level": "beginner",
+    "prompt": "Complete: \"Could you _____ the light? It's too dark.\" (увімкнути)",
+    "options": [
+      "turn on",
+      "turn off",
+      "turn away",
+      "turn back"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Turn on\" — увімкнути (світло, прилад)."
+  },
+  {
+    "id": "id-1",
+    "category": "idioms",
+    "level": "beginner",
+    "prompt": "Що означає \"break the ice\"?",
+    "options": [
+      "зламати кригу/зняти напругу",
+      "провалити тест",
+      "почати з нуля",
+      "втратити терпіння"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Break the ice\" — зняти напругу, розпочати спілкування."
+  },
+  {
+    "id": "id-2",
+    "category": "idioms",
+    "level": "beginner",
+    "prompt": "Що означає \"hit the books\"?",
+    "options": [
+      "вдарити книгою",
+      "почати навчатись/сидіти за книгами",
+      "продати книги",
+      "написати книгу"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Hit the books\" — інтенсивно навчатись, готуватись до іспиту."
+  },
+  {
+    "id": "id-3",
+    "category": "idioms",
+    "level": "intermediate",
+    "prompt": "Що означає \"cost an arm and a leg\"?",
+    "options": [
+      "коштувати дуже дорого",
+      "бути безкоштовним",
+      "зламати руку",
+      "заощадити гроші"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Cost an arm and a leg\" — коштувати дуже дорого."
+  },
+  {
+    "id": "id-4",
+    "category": "idioms",
+    "level": "intermediate",
+    "prompt": "Що означає \"under the weather\"?",
+    "options": [
+      "погано почуватись",
+      "бути під дощем",
+      "радіти погоді",
+      "бути щасливим"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Under the weather\" — почуватись хворим/не в найкращій формі."
+  },
+  {
+    "id": "id-5",
+    "category": "idioms",
+    "level": "advanced",
+    "prompt": "Що означає \"bite the bullet\"?",
+    "options": [
+      "стиснути зуби й зробити щось важке",
+      "відмовитись від плану",
+      "вистрелити навмання",
+      "втекти від проблеми"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Bite the bullet\" — прийняти важке рішення, стиснувши зуби."
+  },
+  {
+    "id": "id-6",
+    "category": "idioms",
+    "level": "intermediate",
+    "prompt": "Що означає \"spill the beans\"?",
+    "options": [
+      "видати секрет",
+      "приготувати обід",
+      "втратити гроші",
+      "посваритись"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Spill the beans\" — розкрити секрет, проговоритись."
+  },
+  {
+    "id": "id-7",
+    "category": "idioms",
+    "level": "beginner",
+    "prompt": "Що означає \"piece of cake\"?",
+    "options": [
+      "дуже легко",
+      "дуже смачно",
+      "дуже дорого",
+      "дуже довго"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Piece of cake\" — щось дуже легке, простіше простого."
+  },
+  {
+    "id": "id-8",
+    "category": "idioms",
+    "level": "intermediate",
+    "prompt": "Що означає \"once in a blue moon\"?",
+    "options": [
+      "дуже рідко",
+      "щомісяця",
+      "вночі",
+      "дуже часто"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Once in a blue moon\" — дуже рідко, майже ніколи."
+  },
+  {
+    "id": "id-9",
+    "category": "idioms",
+    "level": "advanced",
+    "prompt": "Що означає \"get the ball rolling\"?",
+    "options": [
+      "розпочати справу",
+      "закінчити гру",
+      "зіграти в футбол",
+      "відкласти рішення"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Get the ball rolling\" — розпочати процес, дати старт."
+  },
+  {
+    "id": "id-10",
+    "category": "idioms",
+    "level": "intermediate",
+    "prompt": "Що означає \"hit the road\"?",
+    "options": [
+      "вирушити в дорогу",
+      "потрапити в аварію",
+      "зупинитись",
+      "заблукати"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Hit the road\" — вирушити в подорож/дорогу."
+  },
+  {
+    "id": "id-11",
+    "category": "idioms",
+    "level": "beginner",
+    "prompt": "Що означає \"a piece of advice\"?",
+    "options": [
+      "порада",
+      "частина торта",
+      "реклама",
+      "подарунок"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"A piece of advice\" — одна порада (advice незлічуваний іменник)."
+  },
+  {
+    "id": "id-12",
+    "category": "idioms",
+    "level": "advanced",
+    "prompt": "Що означає \"beat around the bush\"?",
+    "options": [
+      "говорити ухильно, не по суті",
+      "бити в барабан",
+      "ховатись у кущах",
+      "швидко діяти"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Beat around the bush\" — уникати прямої відповіді, говорити манівцями."
+  },
+  {
+    "id": "id-13",
+    "category": "idioms",
+    "level": "intermediate",
+    "prompt": "Що означає \"the best of both worlds\"?",
+    "options": [
+      "переваги двох варіантів одразу",
+      "найкраще у світі",
+      "вибір без альтернатив",
+      "подорож навколо світу"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"The best of both worlds\" — отримати переваги обох ситуацій одночасно."
+  },
+  {
+    "id": "gt-1",
+    "category": "grammar_traps",
+    "level": "intermediate",
+    "prompt": "Оберіть правильний варіант: \"There are _____ people here than yesterday.\"",
+    "options": [
+      "less",
+      "fewer",
+      "few",
+      "little"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Fewer\" вживається з обчислюваними іменниками (people), \"less\" — з незлічуваними."
+  },
+  {
+    "id": "gt-2",
+    "category": "grammar_traps",
+    "level": "advanced",
+    "prompt": "Оберіть правильний варіант: \"_____ did you give the report to?\"",
+    "options": [
+      "Who",
+      "Whom",
+      "Whose",
+      "Which"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Whom\" — коли слово є об'єктом дії (give to whom)."
+  },
+  {
+    "id": "gt-3",
+    "category": "grammar_traps",
+    "level": "beginner",
+    "prompt": "Оберіть правильний варіант: \"_____ raining outside.\"",
+    "options": [
+      "It's",
+      "Its",
+      "It",
+      "Is"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"It's\" = \"it is\". \"Its\" — присвійний займенник без апострофа."
+  },
+  {
+    "id": "gt-4",
+    "category": "grammar_traps",
+    "level": "intermediate",
+    "prompt": "Оберіть правильний варіант: \"I have lived here _____ 2019.\"",
+    "options": [
+      "for",
+      "since",
+      "from",
+      "during"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Since\" — з певного моменту в часі (2019), \"for\" — з тривалістю (for 5 years)."
+  },
+  {
+    "id": "gt-5",
+    "category": "grammar_traps",
+    "level": "advanced",
+    "prompt": "Оберіть правильний варіант: \"If I _____ known, I would have helped.\"",
+    "options": [
+      "have",
+      "had",
+      "would have",
+      "has"
+    ],
+    "correctIndex": 1,
+    "explanation": "Третій тип умовних речень: \"If I had known...\" (Past Perfect)."
+  },
+  {
+    "id": "gt-6",
+    "category": "grammar_traps",
+    "level": "intermediate",
+    "prompt": "Оберіть правильний варіант: \"Neither of the answers _____ correct.\"",
+    "options": [
+      "is",
+      "are",
+      "be",
+      "were"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Neither of\" граматично вимагає однини: \"is correct\"."
+  },
+  {
+    "id": "gt-7",
+    "category": "grammar_traps",
+    "level": "beginner",
+    "prompt": "Оберіть правильний варіант: \"She _____ to school every day.\"",
+    "options": [
+      "go",
+      "goes",
+      "going",
+      "gone"
+    ],
+    "correctIndex": 1,
+    "explanation": "Present Simple, третя особа однини (she/he/it) вимагає -s: \"goes\"."
+  },
+  {
+    "id": "gt-8",
+    "category": "grammar_traps",
+    "level": "advanced",
+    "prompt": "Оберіть правильний варіант: \"By next year, I _____ here for a decade.\"",
+    "options": [
+      "will work",
+      "will have worked",
+      "work",
+      "worked"
+    ],
+    "correctIndex": 1,
+    "explanation": "Future Perfect: дія завершиться до певного моменту в майбутньому."
+  },
+  {
+    "id": "gt-9",
+    "category": "grammar_traps",
+    "level": "intermediate",
+    "prompt": "Оберіть правильний варіант: \"This is the man _____ car was stolen.\"",
+    "options": [
+      "who",
+      "which",
+      "whose",
+      "whom"
+    ],
+    "correctIndex": 2,
+    "explanation": "\"Whose\" — присвійний відносний займенник (чия машина)."
+  },
+  {
+    "id": "gt-10",
+    "category": "grammar_traps",
+    "level": "beginner",
+    "prompt": "Оберіть правильний варіант: \"There _____ two apples on the table.\"",
+    "options": [
+      "is",
+      "are",
+      "be",
+      "was"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"There are\" з множиною (two apples)."
+  },
+  {
+    "id": "gt-11",
+    "category": "grammar_traps",
+    "level": "advanced",
+    "prompt": "Оберіть правильний варіант: \"The report _____ by tomorrow morning.\"",
+    "options": [
+      "will finish",
+      "will be finished",
+      "finishes",
+      "is finishing"
+    ],
+    "correctIndex": 1,
+    "explanation": "Пасивний стан у майбутньому часі: \"will be finished\"."
+  },
+  {
+    "id": "gt-12",
+    "category": "grammar_traps",
+    "level": "intermediate",
+    "prompt": "Оберіть правильний варіант: \"I'm used to _____ up early.\"",
+    "options": [
+      "get",
+      "getting",
+      "got",
+      "have got"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Be used to\" + герундій (-ing): \"used to getting up\"."
+  },
+  {
+    "id": "gt-13",
+    "category": "grammar_traps",
+    "level": "beginner",
+    "prompt": "Оберіть правильний варіант: \"He doesn't _____ coffee.\"",
+    "options": [
+      "likes",
+      "like",
+      "liking",
+      "liked"
+    ],
+    "correctIndex": 1,
+    "explanation": "Після допоміжного \"doesn't\" дієслово без -s: \"doesn't like\"."
+  },
+  {
+    "id": "syn-1",
+    "category": "synonyms",
+    "level": "intermediate",
+    "prompt": "Синонім, що підсилює \"good\" (чудовий)?",
+    "options": [
+      "remarkable",
+      "ordinary",
+      "plain",
+      "average"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Remarkable\" — визначний, вражаючий — сильніше за \"good\"."
+  },
+  {
+    "id": "syn-2",
+    "category": "synonyms",
+    "level": "intermediate",
+    "prompt": "Синонім до \"big\" (величезний)?",
+    "options": [
+      "tiny",
+      "huge",
+      "small",
+      "narrow"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Huge\" — величезний, набагато сильніше за нейтральне \"big\"."
+  },
+  {
+    "id": "syn-3",
+    "category": "synonyms",
+    "level": "advanced",
+    "prompt": "Синонім до \"happy\" (у формальному стилі)?",
+    "options": [
+      "content",
+      "elated",
+      "miserable",
+      "bored"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Elated\" — у захваті, дуже щасливий — виразніше за \"happy\"."
+  },
+  {
+    "id": "syn-4",
+    "category": "synonyms",
+    "level": "intermediate",
+    "prompt": "Синонім до \"said\" у писемному мовленні?",
+    "options": [
+      "stated",
+      "ate",
+      "walked",
+      "jumped"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Stated\" — офіційніший синонім до \"said\" для письмового стилю."
+  },
+  {
+    "id": "syn-5",
+    "category": "synonyms",
+    "level": "advanced",
+    "prompt": "Синонім до \"important\" (критично важливий)?",
+    "options": [
+      "crucial",
+      "minor",
+      "optional",
+      "irrelevant"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Crucial\" — вирішальний, критично важливий — сильніше за \"important\"."
+  },
+  {
+    "id": "syn-6",
+    "category": "synonyms",
+    "level": "intermediate",
+    "prompt": "Синонім до \"beautiful\"?",
+    "options": [
+      "plain",
+      "ugly",
+      "stunning",
+      "dull"
+    ],
+    "correctIndex": 2,
+    "explanation": "\"Stunning\" — приголомшливо красивий, підсилений синонім."
+  },
+  {
+    "id": "syn-7",
+    "category": "synonyms",
+    "level": "beginner",
+    "prompt": "Синонім до \"sad\"?",
+    "options": [
+      "upset",
+      "thrilled",
+      "calm",
+      "excited"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Upset\" — засмучений, синонім до \"sad\"."
+  },
+  {
+    "id": "syn-8",
+    "category": "synonyms",
+    "level": "advanced",
+    "prompt": "Синонім до \"difficult\" (дуже складний)?",
+    "options": [
+      "challenging",
+      "simple",
+      "easy",
+      "basic"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Challenging\" — складний, який кидає виклик — сильніше за \"difficult\"."
+  },
+  {
+    "id": "syn-9",
+    "category": "synonyms",
+    "level": "intermediate",
+    "prompt": "Синонім до \"fast\"?",
+    "options": [
+      "rapid",
+      "slow",
+      "lazy",
+      "gentle"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Rapid\" — швидкий, синонім до \"fast\"."
+  },
+  {
+    "id": "syn-10",
+    "category": "synonyms",
+    "level": "advanced",
+    "prompt": "Синонім до \"angry\" (дуже розлючений)?",
+    "options": [
+      "furious",
+      "pleased",
+      "calm",
+      "bored"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Furious\" — розлючений, набагато сильніше за \"angry\"."
+  },
+  {
+    "id": "syn-11",
+    "category": "synonyms",
+    "level": "beginner",
+    "prompt": "Синонім до \"small\"?",
+    "options": [
+      "tiny",
+      "giant",
+      "huge",
+      "massive"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Tiny\" — крихітний, синонім до \"small\"."
+  },
+  {
+    "id": "syn-12",
+    "category": "synonyms",
+    "level": "intermediate",
+    "prompt": "Синонім до \"smart\"?",
+    "options": [
+      "clever",
+      "dumb",
+      "slow",
+      "lazy"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Clever\" — розумний, синонім до \"smart\"."
+  },
+  {
+    "id": "syn-13",
+    "category": "synonyms",
+    "level": "advanced",
+    "prompt": "Синонім до \"start\" (у формальному тексті)?",
+    "options": [
+      "commence",
+      "finish",
+      "end",
+      "pause"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Commence\" — розпочати, формальний синонім до \"start\"."
+  },
+  {
+    "id": "iel-1",
+    "category": "ielts",
+    "level": "advanced",
+    "prompt": "Яка фраза підходить для вступу в IELTS Writing Task 2?",
+    "options": [
+      "It is a well-known fact that...",
+      "OMG this is so true",
+      "idk but maybe...",
+      "lol totally agree"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"It is a well-known fact that...\" — формальний вступний зворот для есе."
+  },
+  {
+    "id": "iel-2",
+    "category": "ielts",
+    "level": "advanced",
+    "prompt": "Яка фраза підходить, щоб навести приклад у Speaking?",
+    "options": [
+      "For instance...",
+      "whatever",
+      "kinda like...",
+      "stuff like that"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"For instance...\" — формальний спосіб навести приклад."
+  },
+  {
+    "id": "iel-3",
+    "category": "ielts",
+    "level": "intermediate",
+    "prompt": "Яка фраза висловлює власну думку формально?",
+    "options": [
+      "I reckon",
+      "In my opinion",
+      "I guess",
+      "kinda think"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"In my opinion\" — стандартна формальна фраза для висловлення думки."
+  },
+  {
+    "id": "iel-4",
+    "category": "ielts",
+    "level": "advanced",
+    "prompt": "Яка фраза підсумовує аргумент у висновку есе?",
+    "options": [
+      "To sum up,",
+      "So yeah,",
+      "Anyway,",
+      "That's basically it"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"To sum up,\" — формальний вираз для підсумку в кінці есе."
+  },
+  {
+    "id": "iel-5",
+    "category": "ielts",
+    "level": "intermediate",
+    "prompt": "Яка фраза показує контраст думок?",
+    "options": [
+      "On the other hand,",
+      "And stuff,",
+      "Like,",
+      "Basically,"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"On the other hand,\" — протиставлення протилежної точки зору."
+  },
+  {
+    "id": "iel-6",
+    "category": "ielts",
+    "level": "advanced",
+    "prompt": "Яка фраза додає ще один аргумент у Writing?",
+    "options": [
+      "Furthermore,",
+      "By the way,",
+      "Anyway,",
+      "So,"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Furthermore,\" — формальний спосіб додати ще один аргумент."
+  },
+  {
+    "id": "iel-7",
+    "category": "ielts",
+    "level": "intermediate",
+    "prompt": "Яка фраза підходить для опису статистики/графіка?",
+    "options": [
+      "According to the graph,",
+      "I think that graph is nice",
+      "The graph looks cool",
+      "Well, the graph..."
+    ],
+    "correctIndex": 0,
+    "explanation": "\"According to the graph,\" — формальний вступ до опису даних (Task 1)."
+  },
+  {
+    "id": "iel-8",
+    "category": "ielts",
+    "level": "advanced",
+    "prompt": "Яка фраза висловлює обережне припущення?",
+    "options": [
+      "It could be argued that...",
+      "Everybody knows that...",
+      "Obviously...",
+      "No doubt..."
+    ],
+    "correctIndex": 0,
+    "explanation": "\"It could be argued that...\" — академічно обережне формулювання тези."
+  },
+  {
+    "id": "iel-9",
+    "category": "ielts",
+    "level": "intermediate",
+    "prompt": "Яка фраза підходить, щоб перепитати в Speaking?",
+    "options": [
+      "Could you clarify that?",
+      "What?",
+      "Huh?",
+      "Say again?"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Could you clarify that?\" — ввічливий формальний спосіб перепитати."
+  },
+  {
+    "id": "iel-10",
+    "category": "ielts",
+    "level": "advanced",
+    "prompt": "Яка фраза підсумовує причину й наслідок?",
+    "options": [
+      "As a result,",
+      "By the way,",
+      "Meanwhile,",
+      "Otherwise,"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"As a result,\" — вказує на наслідок попередньої тези."
+  },
+  {
+    "id": "kid-1",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "🐶 Як англійською \"собака\"?",
+    "options": [
+      "dog",
+      "cat",
+      "fish",
+      "bird"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Dog\" — гав-гав, собачка! 🐶"
+  },
+  {
+    "id": "kid-2",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "🐱 Як англійською \"кіт\"?",
+    "options": [
+      "dog",
+      "cat",
+      "cow",
+      "pig"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Cat\" — няв-няв, котик! 🐱"
+  },
+  {
+    "id": "kid-3",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "🔴 Як англійською \"червоний\"?",
+    "options": [
+      "blue",
+      "green",
+      "red",
+      "yellow"
+    ],
+    "correctIndex": 2,
+    "explanation": "\"Red\" — колір як помідор або полуниця! 🍓"
+  },
+  {
+    "id": "kid-4",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "💙 Як англійською \"синій\"?",
+    "options": [
+      "blue",
+      "red",
+      "pink",
+      "black"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Blue\" — колір неба та моря! 🌊"
+  },
+  {
+    "id": "kid-5",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "1️⃣ Як англійською число \"три\"?",
+    "options": [
+      "one",
+      "two",
+      "three",
+      "four"
+    ],
+    "correctIndex": 2,
+    "explanation": "\"Three\" — 1, 2, 3! Порахуй пальчики. ✋"
+  },
+  {
+    "id": "kid-6",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "👨 Як англійською \"тато\"?",
+    "options": [
+      "mother",
+      "father",
+      "brother",
+      "sister"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Father\" (або \"dad\") — це тато! 👨"
+  },
+  {
+    "id": "kid-7",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "👩 Як англійською \"мама\"?",
+    "options": [
+      "mother",
+      "father",
+      "grandma",
+      "aunt"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Mother\" (або \"mom\") — це мама! 👩"
+  },
+  {
+    "id": "kid-8",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "☀️ Як англійською \"сонце\"?",
+    "options": [
+      "moon",
+      "star",
+      "sun",
+      "cloud"
+    ],
+    "correctIndex": 2,
+    "explanation": "\"Sun\" світить вдень і зігріває нас! ☀️"
+  },
+  {
+    "id": "kid-9",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "🍎 Як англійською \"яблуко\"?",
+    "options": [
+      "apple",
+      "banana",
+      "orange",
+      "grape"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Apple\" — смачне й корисне яблучко! 🍎"
+  },
+  {
+    "id": "kid-10",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "🏫 Як англійською \"школа\"?",
+    "options": [
+      "home",
+      "school",
+      "shop",
+      "park"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"School\" — місце, де ми вчимось! 🏫"
+  },
+  {
+    "id": "kid-11",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "🐘 Як англійською \"слон\"?",
+    "options": [
+      "lion",
+      "elephant",
+      "tiger",
+      "monkey"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Elephant\" — великий сірий слон із хоботом! 🐘"
+  },
+  {
+    "id": "kid-12",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "Як буде \"Я маю кота\"?",
+    "options": [
+      "I has a cat",
+      "I have a cat",
+      "I having a cat",
+      "I haves a cat"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"I have a cat\" — правильна форма для \"я\"."
+  },
+  {
+    "id": "kid-13",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "🐦 Як англійською \"пташка\"?",
+    "options": [
+      "bird",
+      "fish",
+      "frog",
+      "bee"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Bird\" — пташка, що вміє літати! 🐦"
+  },
+  {
+    "id": "kid-14",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "👋 Як привітатись вранці англійською?",
+    "options": [
+      "Good night",
+      "Good morning",
+      "Good bye",
+      "Good evening"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Good morning!\" кажемо вранці. ☀️"
+  },
+  {
+    "id": "kid-15",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "🖐️ Як англійською \"рука\"?",
+    "options": [
+      "leg",
+      "hand",
+      "head",
+      "foot"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Hand\" — рука, якою ми махаємо \"привіт\"! 👋"
+  },
+  {
+    "id": "kid-16",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "🎂 Як англійською \"день народження\"?",
+    "options": [
+      "birthday",
+      "holiday",
+      "weekday",
+      "birthday party only"
+    ],
+    "correctIndex": 0,
+    "explanation": "\"Birthday\" — свято, коли всі дарують подарунки! 🎁"
+  },
+  {
+    "id": "kid-17",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "Скільки буде \"seven\"?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 2,
+    "explanation": "\"Seven\" — це число 7!"
+  },
+  {
+    "id": "kid-18",
+    "category": "kids",
+    "level": "beginner",
+    "prompt": "🌳 Як англійською \"дерево\"?",
+    "options": [
+      "flower",
+      "tree",
+      "grass",
+      "leaf"
+    ],
+    "correctIndex": 1,
+    "explanation": "\"Tree\" — велике дерево з листочками! 🌳"
+  }
+]
