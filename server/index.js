@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const crypto = require('crypto')
@@ -6,13 +7,18 @@ const fs = require('fs')
 const {
   getCategories,
   getQuestions,
-  saveQuestions,
+  insertQuestion,
+  updateQuestion,
+  deleteQuestion,
+  questionExists,
   getLeaderboard,
-  saveLeaderboard,
-  getChallenges,
-  saveChallenges,
+  upsertLeaderboardEntry,
+  getChallenge,
+  insertChallenge,
+  saveChallengeParticipants,
 } = require('./store')
 const { validateQuestion } = require('./validate')
+const { runMigrations } = require('./migrate')
 
 function cleanName(name) {
   return String(name ?? '')
@@ -40,69 +46,62 @@ function requireAdmin(req, res, next) {
   next()
 }
 
-app.get('/api/health', (_req, res) => res.json({ ok: true }))
+// Express 5 forwards a rejected async handler's error to the error middleware automatically.
+app.get('/api/health', async (_req, res) => res.json({ ok: true }))
 
-app.get('/api/categories', (_req, res) => {
-  res.json(getCategories())
+app.get('/api/categories', async (_req, res) => {
+  res.json(await getCategories())
 })
 
-app.get('/api/questions', (req, res) => {
+app.get('/api/questions', async (req, res) => {
   const { category } = req.query
-  const all = getQuestions()
+  const all = await getQuestions()
   const filtered = category ? all.filter((q) => q.category === category) : all
   res.json(filtered)
 })
 
-app.post('/api/questions', requireAdmin, (req, res) => {
+app.post('/api/questions', requireAdmin, async (req, res) => {
   const errors = validateQuestion(req.body)
   if (errors.length) return res.status(400).json({ errors })
 
-  const questions = getQuestions()
   const id = req.body.id || crypto.randomUUID()
-  if (questions.some((q) => q.id === id)) {
+  if (await questionExists(id)) {
     return res.status(409).json({ error: `Question with id "${id}" already exists` })
   }
 
   const newQuestion = { ...req.body, id }
-  questions.push(newQuestion)
-  saveQuestions(questions)
+  await insertQuestion(newQuestion)
   res.status(201).json(newQuestion)
 })
 
-app.put('/api/questions/:id', requireAdmin, (req, res) => {
+app.put('/api/questions/:id', requireAdmin, async (req, res) => {
   const errors = validateQuestion(req.body, { partial: true })
   if (errors.length) return res.status(400).json({ errors })
 
-  const questions = getQuestions()
-  const idx = questions.findIndex((q) => q.id === req.params.id)
-  if (idx === -1) return res.status(404).json({ error: `Question "${req.params.id}" not found` })
+  if (!(await questionExists(req.params.id))) {
+    return res.status(404).json({ error: `Question "${req.params.id}" not found` })
+  }
 
-  questions[idx] = { ...questions[idx], ...req.body, id: req.params.id }
-  saveQuestions(questions)
-  res.json(questions[idx])
+  const all = await getQuestions()
+  const existing = all.find((q) => q.id === req.params.id)
+  const merged = { ...existing, ...req.body, id: req.params.id }
+  const updated = await updateQuestion(req.params.id, merged)
+  res.json(updated)
 })
 
-app.delete('/api/questions/:id', requireAdmin, (req, res) => {
-  const questions = getQuestions()
-  const idx = questions.findIndex((q) => q.id === req.params.id)
-  if (idx === -1) return res.status(404).json({ error: `Question "${req.params.id}" not found` })
-
-  const [removed] = questions.splice(idx, 1)
-  saveQuestions(questions)
+app.delete('/api/questions/:id', requireAdmin, async (req, res) => {
+  const removed = await deleteQuestion(req.params.id)
+  if (!removed) return res.status(404).json({ error: `Question "${req.params.id}" not found` })
   res.json(removed)
 })
 
 // ---------- Leaderboard ----------
 
-app.get('/api/leaderboard', (_req, res) => {
-  const entries = getLeaderboard()
-    .slice()
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 50)
-  res.json(entries)
+app.get('/api/leaderboard', async (_req, res) => {
+  res.json(await getLeaderboard())
 })
 
-app.post('/api/leaderboard', (req, res) => {
+app.post('/api/leaderboard', async (req, res) => {
   const { deviceId, name, score, totalAnswered, totalCorrect, streak, level } = req.body ?? {}
   if (!deviceId || typeof deviceId !== 'string') {
     return res.status(400).json({ error: '"deviceId" is required' })
@@ -111,9 +110,7 @@ app.post('/api/leaderboard', (req, res) => {
     return res.status(400).json({ error: '"score" must be a number' })
   }
 
-  const entries = getLeaderboard()
-  const idx = entries.findIndex((e) => e.deviceId === deviceId)
-  const entry = {
+  const entry = await upsertLeaderboardEntry({
     deviceId,
     name: cleanName(name),
     score: Math.max(0, Math.round(score)),
@@ -121,13 +118,7 @@ app.post('/api/leaderboard', (req, res) => {
     totalCorrect: Number.isFinite(totalCorrect) ? totalCorrect : 0,
     streak: Number.isFinite(streak) ? streak : 0,
     level: typeof level === 'string' ? level : null,
-    updatedAt: new Date().toISOString(),
-  }
-
-  if (idx === -1) entries.push(entry)
-  else entries[idx] = entry
-
-  saveLeaderboard(entries)
+  })
   res.json(entry)
 })
 
@@ -135,13 +126,13 @@ app.post('/api/leaderboard', (req, res) => {
 // Легкий "виклик другу": хтось створює ціль (напр. 50 правильних відповідей),
 // ділиться коротким кодом (id), інші приєднуються й синхронізують прогрес.
 
-app.get('/api/challenges/:id', (req, res) => {
-  const challenge = getChallenges().find((c) => c.id === req.params.id)
+app.get('/api/challenges/:id', async (req, res) => {
+  const challenge = await getChallenge(req.params.id)
   if (!challenge) return res.status(404).json({ error: 'Challenge not found' })
   res.json(challenge)
 })
 
-app.post('/api/challenges', (req, res) => {
+app.post('/api/challenges', async (req, res) => {
   const { title, targetType, targetValue, creatorDeviceId, creatorName } = req.body ?? {}
   const validTargetTypes = new Set(['correct_answers', 'streak_days'])
 
@@ -155,39 +146,33 @@ app.post('/api/challenges', (req, res) => {
     return res.status(400).json({ error: '"creatorDeviceId" is required' })
   }
 
-  const challenge = {
+  const challenge = await insertChallenge({
     id: crypto.randomUUID().slice(0, 8),
     title: String(title ?? '').trim().slice(0, 60) || 'Виклик друзям',
     targetType,
     targetValue: Math.round(targetValue),
-    createdAt: new Date().toISOString(),
     participants: [{ deviceId: creatorDeviceId, name: cleanName(creatorName), progress: 0, joinedAt: new Date().toISOString() }],
-  }
-
-  const challenges = getChallenges()
-  challenges.push(challenge)
-  saveChallenges(challenges)
+  })
   res.status(201).json(challenge)
 })
 
-app.post('/api/challenges/:id/join', (req, res) => {
+app.post('/api/challenges/:id/join', async (req, res) => {
   const { deviceId, name } = req.body ?? {}
   if (!deviceId || typeof deviceId !== 'string') {
     return res.status(400).json({ error: '"deviceId" is required' })
   }
 
-  const challenges = getChallenges()
-  const challenge = challenges.find((c) => c.id === req.params.id)
+  const challenge = await getChallenge(req.params.id)
   if (!challenge) return res.status(404).json({ error: 'Challenge not found' })
 
   if (!challenge.participants.some((p) => p.deviceId === deviceId)) {
     challenge.participants.push({ deviceId, name: cleanName(name), progress: 0, joinedAt: new Date().toISOString() })
-    saveChallenges(challenges)
+    await saveChallengeParticipants(req.params.id, challenge.participants)
   }
   res.json(challenge)
 })
 
-app.post('/api/challenges/:id/progress', (req, res) => {
+app.post('/api/challenges/:id/progress', async (req, res) => {
   const { deviceId, progress } = req.body ?? {}
   if (!deviceId || typeof deviceId !== 'string') {
     return res.status(400).json({ error: '"deviceId" is required' })
@@ -196,16 +181,15 @@ app.post('/api/challenges/:id/progress', (req, res) => {
     return res.status(400).json({ error: '"progress" must be a number' })
   }
 
-  const challenges = getChallenges()
-  const challenge = challenges.find((c) => c.id === req.params.id)
+  const challenge = await getChallenge(req.params.id)
   if (!challenge) return res.status(404).json({ error: 'Challenge not found' })
 
   const participant = challenge.participants.find((p) => p.deviceId === deviceId)
   if (!participant) return res.status(404).json({ error: 'Not a participant of this challenge — join it first' })
 
   participant.progress = Math.max(0, Math.round(progress))
-  saveChallenges(challenges)
-  res.json(challenge)
+  const updated = await saveChallengeParticipants(req.params.id, challenge.participants)
+  res.json(updated)
 })
 
 // ---------- Serve the built frontend in production ----------
@@ -218,6 +202,19 @@ if (process.env.NODE_ENV === 'production' && fs.existsSync(DIST_DIR)) {
   app.get(/^(?!\/api).*/, (_req, res) => res.sendFile(path.join(DIST_DIR, 'index.html')))
 }
 
-app.listen(PORT, () => {
-  console.log(`[server] QuizEnglish API listening on http://localhost:${PORT}`)
+// Catch async errors that Express 5 forwards here. Must be registered last.
+app.use((err, _req, res, _next) => {
+  console.error(err)
+  res.status(500).json({ error: 'Internal server error' })
 })
+
+runMigrations()
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log(`[server] QuizEnglish API listening on http://localhost:${PORT}`)
+    })
+  })
+  .catch((err) => {
+    console.error('[server] Failed to run database migrations:', err)
+    process.exit(1)
+  })
